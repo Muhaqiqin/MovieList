@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/img_movie"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/tv_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_movie"
+        android:text="@string/judul"
+        android:layout_marginStart="26dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_judul"
+        android:layout_toRightOf="@id/img_movie"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="15dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/desc"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_movie"
+        android:layout_alignBottom="@id/img_movie"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/judul"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
